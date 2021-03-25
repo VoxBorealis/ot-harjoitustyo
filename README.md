@@ -9,5 +9,7 @@
 
 ### Viikko 2
 [maksukortti](https://github.com/VoxBorealis/ot-harjoitustyo/tree/main/laskarit/viikko2/maksukortti)
+
 [unicafe](https://github.com/VoxBorealis/ot-harjoitustyo/tree/main/laskarit/viikko2/unicafe)
+
 [coverage.png](https://github.com/VoxBorealis/ot-harjoitustyo/blob/main/laskarit/viikko2/coverage.png)

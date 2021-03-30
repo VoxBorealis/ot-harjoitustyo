@@ -13,3 +13,11 @@
 [unicafe](https://github.com/VoxBorealis/ot-harjoitustyo/tree/main/laskarit/viikko2/unicafe)
 
 [coverage.png](https://github.com/VoxBorealis/ot-harjoitustyo/blob/main/laskarit/viikko2/coverage.png)
+
+# Python Muistipeli
+
+## Dokumentaatio
+
+[Vaatimusmäärittely](https://github.com/VoxBorealis/ot-harjoitustyo/blob/main/dokumentaatio/vaatimusmaarittely.md)
+
+[Työaikakirjanpito](https://github.com/VoxBorealis/ot-harjoitustyo/blob/main/dokumentaatio/tuntikirjanpito.md)

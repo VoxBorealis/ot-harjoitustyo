@@ -4,4 +4,6 @@
 | :----:|:-----| :-----|
 | 23.3. | 3    | tutustuminen PyGameen |
 | 30.3  | 2    | määrittelydokumentti |
-| yht   | 5    |                  | 
+| 13.4  | 3    | kortti assettien tekeminen |
+| 13.4  | 5    | piirtää kortit ruudulle |
+| yht   | 13   |                  | 

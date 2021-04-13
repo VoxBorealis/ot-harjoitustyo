@@ -1,23 +1,31 @@
 # Ohjelmistotekniikka, harjoitustyö
 
-## Tehtävät
-
-### Viikko 1
-[gitlog.txt](https://github.com/VoxBorealis/ot-harjoitustyo/blob/8b42fb2099a82544683bb6dd1322964c405e4ac8/laskarit/viikko1/gitlog.txt)
-
-[komentorivi.txt](https://github.com/VoxBorealis/ot-harjoitustyo/blob/8b42fb2099a82544683bb6dd1322964c405e4ac8/laskarit/viikko1/komentorivi.txt)
-
-### Viikko 2
-[maksukortti](https://github.com/VoxBorealis/ot-harjoitustyo/tree/main/laskarit/viikko2/maksukortti)
-
-[unicafe](https://github.com/VoxBorealis/ot-harjoitustyo/tree/main/laskarit/viikko2/unicafe)
-
-[coverage.png](https://github.com/VoxBorealis/ot-harjoitustyo/blob/main/laskarit/viikko2/coverage.png)
-
 # Python Muistipeli
+
+Sovellus on perinteinen muistipeli, joka on rakennettu pygame-kirjastolla.
 
 ## Dokumentaatio
 
 [Vaatimusmäärittely](https://github.com/VoxBorealis/ot-harjoitustyo/blob/main/dokumentaatio/vaatimusmaarittely.md)
 
 [Työaikakirjanpito](https://github.com/VoxBorealis/ot-harjoitustyo/blob/main/dokumentaatio/tuntikirjanpito.md)
+
+##Asennus
+
+1. Asenna riippuuvuudet komennolla:
+
+'''bash
+poetry install
+'''
+
+2. Suorita vaadittavat alkutoimenpiteet komennolla:
+
+'''bash
+poetry run invoke build
+'''
+
+3. Käynnistä peli komennolla:
+
+'''bash
+poetry run invoke start
+'''

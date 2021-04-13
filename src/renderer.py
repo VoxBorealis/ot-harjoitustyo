@@ -7,13 +7,11 @@ class Renderer:
         
     def render(self):
         self._display.blit(self._board.background_surface, (0,0))
-        for i in range(self._board.ROWS):
-            for j in range(self._board.COLUMNS):
-                self._display.blit(self._board.CARD, self._board.CARD_GRID[i][j])
-        
-        pygame.display.update()
 
-    def render_cards(self):
-        for i in range(3):
-            for j in range(6):
-                self._display.blit()
+        for card in self._board.cards:
+            if card.get_turned_over():
+                self._display.blit(card.get_surface(), card.get_location())
+            else:
+                self._display.blit(self._board.card_backside, card.get_location())
+
+        pygame.display.update()

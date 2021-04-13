@@ -10,10 +10,10 @@ Sovelluksen pohjana on perinteinen muistipeli, johon on myös mahdollista lisät
 - Pelaaja pystyy aloittamaan muistipelin
    - Ruudulle ilmestyy sopiva määrä korttipareja satunnaisessa järjestyksessä selkäpuoli edellä.
    - Yksi vuoro muodostuu kahdesta kortin käännöstä.
-     - Jos kortit _ovat_ identtiset, pelaaja saa pisteen ja kortit poistuvat ruudulta.
+     - Jos kortit _ovat_ identtiset, pelaaja saa pisteen ja kortit jäävät kuvaruutu ylöspäin ruudulle.
      - Jos kortit _eivät_ ole identtiset, kortit kääntyvät takaisin.
 
-- Peli päättyy, kun kaikki kortit ovat poistuneet ruudulta.
+- Peli päättyy, kun kaikki kortit ovat kääntyneet.
 
 - Pelin päätyttyä, pelaajalle esitetään tilastoja viime pelistä
   - Kuinka monta kierrosta pelasit

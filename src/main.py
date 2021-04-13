@@ -22,7 +22,7 @@ def main():
     event_queue = EventQueue()
     renderer = Renderer(display, board)
     clock = Clock()
-    game_loop = GameLoop(renderer, event_queue, clock)
+    game_loop = GameLoop(renderer, event_queue, clock, board)
 
     pygame.init()
 

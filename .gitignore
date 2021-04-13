@@ -7,7 +7,8 @@
 .DS_Store
 .coverage
 .pytest_cache
--htmlcov
+./htmlcov/*
+.htmlcov
 .__pycache__
 *.py[cod]
 *$py.class

@@ -41,8 +41,6 @@ class GameLoop:
             self._clock.tick(60)
 
     def _handle_events(self):
-        #self.turned = turned
-        #self.matched = matched
         for event in self._event_queue.get():
             if event.type == pygame.QUIT:
                 return False

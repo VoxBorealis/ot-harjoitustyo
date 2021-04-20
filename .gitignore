@@ -3,9 +3,11 @@
 /laskarit/viikko2/unicafe/src/tests/__pycache__
 /laskarit/viikko2/unicafe/.coverage
 /laskarit/viikko2/unicafe/htmlcov
+/src/__pycache__
 .vscode
 .DS_Store
 .coverage
+.pylintrc
 .pytest_cache
 ./htmlcov/*
 .htmlcov

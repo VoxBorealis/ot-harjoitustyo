@@ -1,4 +1,4 @@
-import pygame, os
+import pygame
 from game_loop import GameLoop
 from event_queue import EventQueue
 from renderer import Renderer
@@ -6,12 +6,12 @@ from clock import Clock
 from board import Board
 
 WIDTH = 1280
-HEIGHT = 720
+HEIGHT = 820
 
 ROWS = 3
 COLUMNS = 6
-CARD_LEN = (150,200)
-CARD_SPACE = (54,30)
+CARD_LEN = (150, 200)
+CARD_SPACE = (54, 30)
 
 
 def main():
@@ -26,10 +26,8 @@ def main():
 
     pygame.init()
 
-    
-
-
     game_loop.start()
+
 
 if __name__ == "__main__":
     main()

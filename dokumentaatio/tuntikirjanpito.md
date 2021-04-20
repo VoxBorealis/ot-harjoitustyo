@@ -6,4 +6,5 @@
 | 30.3  | 2    | määrittelydokumentti |
 | 13.4  | 3    | kortti assettien tekeminen |
 | 13.4  | 5    | piirtää kortit ruudulle |
-| yht   | 13   |                  | 
+| 19.4  | 4    | bug fixes              |
+| yht   | 17   |                  | 

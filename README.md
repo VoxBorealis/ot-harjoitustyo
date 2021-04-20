@@ -18,12 +18,6 @@ Sovellus on perinteinen muistipeli, joka on rakennettu pygame-kirjastolla.
 poetry install
 ```
 
-2. Suorita vaadittavat alkutoimenpiteet komennolla:
-
-```bash
-poetry run invoke build
-```
-
 3. Käynnistä peli komennolla:
 
 ```bash

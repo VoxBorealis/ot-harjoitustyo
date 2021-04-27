@@ -4,6 +4,8 @@
 
 Sovellus on perinteinen muistipeli, joka on rakennettu pygame-kirjastolla.
 
+[Viikon 5 Release](https://github.com/VoxBorealis/ot-harjoitustyo/releases/tag/viikko5)
+
 ## Dokumentaatio
 
 [Vaatimusmäärittely](https://github.com/VoxBorealis/ot-harjoitustyo/blob/main/dokumentaatio/vaatimusmaarittely.md)

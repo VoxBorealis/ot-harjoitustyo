@@ -7,7 +7,6 @@
 .vscode
 .DS_Store
 .coverage
-.pylintrc
 .pytest_cache
 ./htmlcov/*
 htmlcov

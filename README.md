@@ -10,6 +10,8 @@ Sovellus on perinteinen muistipeli, joka on rakennettu pygame-kirjastolla.
 
 [Työaikakirjanpito](https://github.com/VoxBorealis/ot-harjoitustyo/blob/main/dokumentaatio/tuntikirjanpito.md)
 
+Arkkitehtuurin(kaavioiden) tekeminen on osoittautunut hankalaksi, joten se on vielä kesken.
+
 ## Asennus
 
 1. Asenna riippuuvuudet komennolla:
@@ -18,13 +20,15 @@ Sovellus on perinteinen muistipeli, joka on rakennettu pygame-kirjastolla.
 poetry install
 ```
 
-3. Käynnistä peli komennolla:
+2. Käynnistä peli komennolla:
 
 ```bash
 poetry run invoke start
 ```
 
 ### Testaus
+
+Pygamen testauskin on osoittautunut vaikeaksi, niin tämäkin on vielä vaiheessa.
 
 Testit suoritetaan komennolla:
 
@@ -41,3 +45,11 @@ poetry run invoke coverage-report
 ```
 
 Raportti generoituu _htmlcov_-hakemistoon.
+
+### Pylint
+
+Pylint testin voi suorittaa komennolla:
+
+```bash
+poetry run invoke lint
+```

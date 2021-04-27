@@ -9,12 +9,10 @@ class GameLoop:
         self._board = board
         self._turned = []
         self._matched = 0
+        self.turns = 0
+        self.mistakes = 0
 
     def start(self):
-
-        turns = 0
-        mistakes = 0
-
         while True:
             if self._handle_events() is False:
                 break
@@ -22,7 +20,12 @@ class GameLoop:
             self._render()
 
             if self._matched == self._board.rows * self._board.columns:
-                print('Victory!')
+                pygame.time.wait(1300)
+                self._renderer.render_go_screen(self.turns, self.mistakes, '01:20')
+                while True:
+                    if self._handle_events() is False:
+                        self._matched = 0
+                        break
 
             if len(self._turned) >= 2:
                 if self._turned[0].get_id() == self._turned[1].get_id():
@@ -34,9 +37,9 @@ class GameLoop:
                     pygame.time.wait(1300)
                     for i in range(2):
                         self._turned[i].turn_over()
-                    mistakes += 1
+                    self.mistakes += 1
                 self._turned.clear()
-                turns += 1
+                self.turns += 1
 
             self._clock.tick(60)
 
@@ -46,6 +49,7 @@ class GameLoop:
                 return False
             if event.type == pygame.MOUSEBUTTONDOWN:
                 mouse_pos = event.pos
+                print(self.turns)
                 for card in self._board.cards:
                     if card.get_location().collidepoint(mouse_pos):
 
@@ -57,7 +61,10 @@ class GameLoop:
                         else:
                             card.turn_over()
                             self._turned.append(card)
+            if event.type == pygame.KEYDOWN:
+                if event.key == pygame.K_SPACE:
+                    return False
         return True
 
     def _render(self):
-        self._renderer.render()
+        self._renderer.render(self.turns)

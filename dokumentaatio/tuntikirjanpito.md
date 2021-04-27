@@ -8,4 +8,6 @@
 | 12.4  | 5    | piirtää kortit ruudulle |
 | 13.4  | 6    | perustoiminnallisuuden lisäys |
 | 19.4  | 4    | bug fixes              |
-| yht   | 23   |                  | 
+| 26.4  | 4    | tuskallista ihmettelyä testien/UML kanssa |
+| 27.4  | 5    | game over ruutu, refactoring |
+| yht   | 32   |                  | 

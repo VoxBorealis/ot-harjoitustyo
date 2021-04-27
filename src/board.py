@@ -1,41 +1,33 @@
-import os
 import random
 import pygame
 from card import Card
+from file_loader import FileLoader
 
 
 class Board:
     def __init__(self, ROWS, COLUMNS, CARD_LEN, CARD_SPACE):
         self.rows = ROWS
         self.columns = COLUMNS
-        current_path = os.path.dirname(__file__)
-        resource_path = os.path.join(current_path, 'assets')
+        self.file_loader = FileLoader()
 
-        self.background_surface = pygame.image.load(
-            os.path.join(resource_path, 'Background.png')).convert()
-        self.card_backside = pygame.image.load(
-            os.path.join(resource_path, 'BACKSIDE.png')).convert()
+        self.background_surface = self.file_loader.get_background()
+        self.card_backside = self.file_loader.get_backside()
+        self.stat_grid = self.file_loader.get_stat_grid()
 
         # Luo cards taulukon, johon se lisää Card pareja 9kpl.
-        # Card sisältää Surface-olion, id:n,
+        # Card sisältää Surface-olion(png), id:n,
         self.cards = []
-        current_path = os.path.dirname(__file__)
-        resource_path = os.path.join(current_path, 'assets')
-        directory = os.path.join(resource_path, 'cards')
-
-        k = 0
-        for filename in os.listdir(directory):
-            file = os.path.join(directory, filename)
-            if os.path.isfile(file):
-                self.card = pygame.image.load(file)
-                for j in range(2):
-                    self.cards.append(Card(self.card, k))
-                k += 1
+        id_ = 0
+        for card in self.file_loader.get_cards():
+            for j in range(2):
+                self.cards.append(Card(card, id_))
+            id_ += 1
         random.shuffle(self.cards)
 
         # Luo 3x6 Ruudukon.
         # Siis tyhjiä kortin kokoisia Rect-olioita
         # Nyt samalla antaa cards olioille locationin (rectin)
+        # Muuttuja k muistaa monesko kortti on käsittelyssä.
         self.card_grid = [[] for i in range(self.rows)]
         k = 0
         for i in range(self.rows):

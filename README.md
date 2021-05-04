@@ -10,6 +10,8 @@ Sovellus on perinteinen muistipeli, joka on rakennettu pygame-kirjastolla.
 
 [Työaikakirjanpito](https://github.com/VoxBorealis/ot-harjoitustyo/blob/main/dokumentaatio/tuntikirjanpito.md)
 
+[Käyttöohje](https://github.com/VoxBorealis/ot-harjoitustyo/blob/main/dokumentaatio/kayttoohje.md)
+
 Arkkitehtuurin(kaavioiden) tekeminen on osoittautunut hankalaksi, joten se on vielä kesken.
 
 ## Asennus

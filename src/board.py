@@ -1,11 +1,29 @@
 import random
 import pygame
-from card import Card
-from file_loader import FileLoader
+from entities.card import Card
+from ui.file_loader import FileLoader
 
 
 class Board:
+    """Luokka, jonka vastuulla on peliruudun luominen ja korttien sijoittaminen ruudulle.
+
+    Attributes:
+        ROWS: Kokonaisluku, joka kuvaa, kuinka monta riviä peliruudulla on
+        COLUMNS: Kokonaisluku, joka kuvaa, kuinka monta jonoa peliruudulla on
+        CARD_LEN: Tuple-arvo, joka kuvaa, kuinka kuinka leveä/pitkä yksittäinen kortti on
+        CARD_SPACE: Tuple-arvo, joka kuvaa, kuinka paljon tyhjää tilaa korttien sivuille
+                     ja alle on jätettävä
+    """
     def __init__(self, ROWS, COLUMNS, CARD_LEN, CARD_SPACE):
+        """Luokan konstruktori, luo peliruudun
+
+        Args:
+            ROWS (int): Kuvaa, kuinka monta riviä peliruudulla on
+            COLUMNS (int): Kuvaa, kuinka monta jonoa peliruudulla on
+            CARD_LEN (tuple): [0] = kortin leveys, [1] = kortin pituus
+            CARD_SPACE (tuple): [0] = tyhjä tila horisontaalisesti, [1] = tyhjä tila vertikaalisesti
+        """
+
         self.rows = ROWS
         self.columns = COLUMNS
         self.file_loader = FileLoader()

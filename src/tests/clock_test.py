@@ -1,7 +1,7 @@
 import unittest
 import pygame
 
-from clock import Clock
+from entities.clock import Clock
 
 class testClock(unittest.TestCase):
     def setUp(self):

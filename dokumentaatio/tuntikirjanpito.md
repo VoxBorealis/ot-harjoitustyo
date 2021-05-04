@@ -10,4 +10,5 @@
 | 19.4  | 4    | bug fixes              |
 | 26.4  | 4    | tuskallista ihmettelyä testien/UML kanssa |
 | 27.4  | 5    | game over ruutu, refactoring |
-| yht   | 32   |                  | 
+|  4.5  | 5    | statsien(mistakes) parantelu, DocString |
+| yht   | 37   |                  | 

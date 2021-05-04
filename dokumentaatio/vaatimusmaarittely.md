@@ -15,9 +15,10 @@ Sovelluksen pohjana on perinteinen muistipeli, johon on myös mahdollista lisät
 
 - Peli päättyy, kun kaikki kortit ovat kääntyneet. ✔
 
-- Pelin päätyttyä, pelaajalle esitetään tilastoja viime pelistä ✔ (WIP)
-  - Kuinka monta kierrosta pelasit ✔ (WIP)
-  - Kuinka monta virheellistä siirtoa teit (WIP)
+- Pelin päätyttyä, pelaajalle esitetään tilastoja viime pelistä ✔
+  - Kuinka monta kierrosta pelasit ✔
+  - Kuinka monta virheellistä siirtoa teit ✔ (Virheiden lasku logiikka toimii nyt)
+  - Kuinka kauan peli kesti ✔
 
 ## Jatkokehitysideoita
 

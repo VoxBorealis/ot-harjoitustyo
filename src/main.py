@@ -1,8 +1,8 @@
 import pygame
 from game_loop import GameLoop
-from event_queue import EventQueue
-from renderer import Renderer
-from clock import Clock
+from entities.event_queue import EventQueue
+from entities.clock import Clock
+from ui.renderer import Renderer
 from board import Board
 
 WIDTH = 1280

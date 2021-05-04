@@ -1,6 +1,6 @@
 # Käyttöohje
 
-Lataa projektin uudimman [releasen](https://github.com/VoxBorealis/ot-harjoitustyo/releases) lähdekoodi painamalla _Assets_osion alta _Source code_.
+Lataa projektin uudimman [releasen](https://github.com/VoxBorealis/ot-harjoitustyo/releases) lähdekoodi painamalla _Assets_ osion alta _Source code_ .
 
 ## Pelin aloittaminen
 

@@ -20,6 +20,7 @@ class Renderer:
         self._display = display
         self._board = board
         self._file_loader = FileLoader()
+        self.WHITE = (255, 255, 255)
 
     def render_board(self, turns, mistakes, time):
         """Piirtää peliruudukon eri elementit ruudulle
@@ -40,13 +41,13 @@ class Renderer:
                 self._display.blit(self._board.card_backside,
                                    card.get_location())
         font = pygame.font.SysFont(None, 30)
-        img = font.render('Turns: ' + str(turns), True, (255, 255, 255))
+        img = font.render('Turns: ' + str(turns), True, (self.WHITE))
         self._display.blit(img, (20, 770))
 
-        draw_mistakes = font.render('Mistakes: ' + str(mistakes), True, (255, 255, 255))
+        draw_mistakes = font.render('Mistakes: ' + str(mistakes), True, (self.WHITE))
         self._display.blit(draw_mistakes, (120, 770))
 
-        draw_time = font.render('Elapsed Time: ' + str(time), True, (255, 255, 255))
+        draw_time = font.render('Elapsed Time: ' + str(time), True, (self.WHITE))
         self._display.blit(draw_time, (270, 770))
 
         pygame.display.update()
@@ -62,16 +63,16 @@ class Renderer:
         self._display.blit(self._file_loader.get_game_over_screen(), (250, 150))
 
         font = pygame.font.SysFont(None, 45)
-        draw_turns = font.render('Turns: ' + str(turns), True, (255, 255, 255))
+        draw_turns = font.render('Turns: ' + str(turns), True, (self.WHITE))
         self._display.blit(draw_turns, (400, 200))
 
-        draw_mistakes = font.render('Mistakes: ' + str(mistakes), True, (255, 255, 255))
+        draw_mistakes = font.render('Mistakes: ' + str(mistakes), True, (self.WHITE))
         self._display.blit(draw_mistakes, (400, 300))
 
-        draw_time = font.render('Time: ' + str(time), True, (255, 255, 255))
+        draw_time = font.render('Time: ' + str(time), True, (self.WHITE))
         self._display.blit(draw_time, (400, 400))
 
-        message = font.render('ARTWORK IN PROGRESS...', True, (255, 255, 255))
+        message = font.render('ARTWORK IN PROGRESS...', True, (self.WHITE))
         self._display.blit(message, (400, 500))
 
         pygame.display.flip()

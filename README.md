@@ -4,7 +4,7 @@
 
 Sovellus on perinteinen muistipeli, joka on rakennettu pygame-kirjastolla.
 
-[Final Release](https://github.com/VoxBorealis/ot-harjoitustyo/releases/tag/1.0)
+[1.0 Release](https://github.com/VoxBorealis/ot-harjoitustyo/releases/tag/1.0)
 
 ## Dokumentaatio
 
@@ -58,3 +58,5 @@ Pylint testin voi suorittaa komennolla:
 ```bash
 poetry run invoke lint
 ```
+
+Icons used on the cards made by Freepik from Flaticon

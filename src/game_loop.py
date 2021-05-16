@@ -1,5 +1,5 @@
+from datetime import datetime
 import pygame
-
 
 class GameLoop:
     """Luokka, jonka vastulla on game loopin ylläpitäminen ja pelaajan syötteiden käsitteleminen.
@@ -32,16 +32,17 @@ class GameLoop:
         self._event_queue = event_queue
         self._board = board
         self._turned = []
-        self._matched = 0
+        self._matched = 16 #
         self.turns = 0
         self.mistakes = 0
         self._seen = set()
+        self._game_over = False
 
     def start(self):
         """Aloittaa game loopin ja tarkastaa 60 kertaa sekunnissa pelin tilan
         """
         while True:
-            if self._handle_events() is False:
+            if self._handle_events() is False or self._game_over is True:
                 break
 
             self._render()
@@ -50,9 +51,14 @@ class GameLoop:
                 pygame.time.wait(500)
                 self._renderer.render_go_screen(self.turns, self.mistakes,
                                                  self._clock.get_ticks()/1000)
+                save_score = open("scores.txt", "a")
+                now = datetime.now()
+                dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
+                save_score.write("Date: " + dt_string + ", Turns: " + str(self.turns) + ", Mistakes: " + 
+                                    str(self.mistakes) + "\n")
                 while True:
                     if self._handle_events() is False:
-                        self._matched = 0
+                        self._game_over = True
                         break
 
             if len(self._turned) >= 2:
@@ -107,3 +113,5 @@ class GameLoop:
         """Piirtää uuden pelitilan ruudulle
         """
         self._renderer.render_board(self.turns, self.mistakes, self._clock.get_ticks()/1000)
+    
+    #def _reset_game(self):

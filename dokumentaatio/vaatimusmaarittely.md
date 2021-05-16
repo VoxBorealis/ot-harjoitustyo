@@ -17,8 +17,10 @@ Sovelluksen pohjana on perinteinen muistipeli, johon on myös mahdollista lisät
 
 - Pelin päätyttyä, pelaajalle esitetään tilastoja viime pelistä ✔
   - Kuinka monta kierrosta pelasit ✔
-  - Kuinka monta virheellistä siirtoa teit ✔ (Virheiden lasku logiikka toimii nyt)
+  - Kuinka monta virheellistä siirtoa teit ✔
   - Kuinka kauan peli kesti ✔
+
+- Pelin päätyttyä pelaajan tilastot tallennetaan scores.txt tiedostoon.
 
 ## Jatkokehitysideoita
 

@@ -63,6 +63,7 @@ class Renderer:
         self._display.blit(self._file_loader.get_game_over_screen(), (250, 150))
 
         font = pygame.font.SysFont(None, 45)
+        smaller_font = pygame.font.SysFont(None, 25)
         draw_turns = font.render('Turns: ' + str(turns), True, (self.WHITE))
         self._display.blit(draw_turns, (400, 200))
 
@@ -72,7 +73,8 @@ class Renderer:
         draw_time = font.render('Time: ' + str(time), True, (self.WHITE))
         self._display.blit(draw_time, (400, 400))
 
-        message = font.render('ARTWORK IN PROGRESS...', True, (self.WHITE))
+        message = smaller_font.render('Press space to quit! Your stats are saved in the scores.txt file'
+                                , True, (self.WHITE))
         self._display.blit(message, (400, 500))
 
         pygame.display.flip()

@@ -1,5 +1,4 @@
 import pygame
-
 from ui.file_loader import FileLoader
 
 class Renderer:
@@ -73,7 +72,8 @@ class Renderer:
         draw_time = font.render('Time: ' + str(time), True, (self.WHITE))
         self._display.blit(draw_time, (400, 400))
 
-        message = smaller_font.render('Press space to quit! Your stats are saved in the scores.txt file'
+        message = smaller_font.render('Press space to quit! \
+            Your stats are saved in the scores.txt file'
                                 , True, (self.WHITE))
         self._display.blit(message, (400, 500))
 

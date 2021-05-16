@@ -20,7 +20,7 @@ Sovelluksen pohjana on perinteinen muistipeli, johon on myös mahdollista lisät
   - Kuinka monta virheellistä siirtoa teit ✔
   - Kuinka kauan peli kesti ✔
 
-- Pelin päätyttyä pelaajan tilastot tallennetaan scores.txt tiedostoon.
+- Pelin päätyttyä pelaajan tilastot tallennetaan scores.txt tiedostoon. ✔
 
 ## Jatkokehitysideoita
 

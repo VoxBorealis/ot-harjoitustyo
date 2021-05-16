@@ -11,4 +11,5 @@
 | 26.4  | 4    | tuskallista ihmettelyä testien/UML kanssa |
 | 27.4  | 5    | game over ruutu, refactoring |
 |  4.5  | 5    | statsien(mistakes) parantelu, DocString |
-| yht   | 37   |                  | 
+| 16.5  | 6    | arkkitehtuuria, testejä, finishing touches |
+| yht   | 43   |                  | 

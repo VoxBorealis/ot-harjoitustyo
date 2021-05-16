@@ -1,6 +1,6 @@
 import unittest
 import pygame
-from entities.card import Card
+from card import Card
 
 
 class TestCard(unittest.TestCase):

@@ -1,7 +1,7 @@
 import pygame
 from game_loop import GameLoop
-from entities.event_queue import EventQueue
-from entities.clock import Clock
+from event_queue import EventQueue
+from clock import Clock
 from ui.renderer import Renderer
 from board import Board
 

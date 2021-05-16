@@ -4,10 +4,7 @@
 
 Sovellus on perinteinen muistipeli, joka on rakennettu pygame-kirjastolla.
 
-[Viikon 5 Release](https://github.com/VoxBorealis/ot-harjoitustyo/releases/tag/viikko5)
-
-[Viikon 6 Release](https://github.com/VoxBorealis/ot-harjoitustyo/releases/tag/viikko6)
-
+[Final Release](https://github.com/VoxBorealis/ot-harjoitustyo/releases/tag/1.0)
 
 ## Dokumentaatio
 
@@ -17,7 +14,10 @@ Sovellus on perinteinen muistipeli, joka on rakennettu pygame-kirjastolla.
 
 [Käyttöohje](https://github.com/VoxBorealis/ot-harjoitustyo/blob/main/dokumentaatio/kayttoohje.md)
 
-Arkkitehtuurin(kaavioiden) tekeminen on osoittautunut hankalaksi, joten se on vielä kesken.
+[Arkkitehtuuri](https://github.com/VoxBorealis/ot-harjoitustyo/blob/main/dokumentaatio/arkkitehtuuri.md)
+
+![Screenshot](./kuvat/screenshot.png)
+
 
 ## Asennus
 
@@ -34,8 +34,6 @@ poetry run invoke start
 ```
 
 ### Testaus
-
-Pygamen testauskin on osoittautunut vaikeaksi, niin tämäkin on vielä vaiheessa.
 
 Testit suoritetaan komennolla:
 

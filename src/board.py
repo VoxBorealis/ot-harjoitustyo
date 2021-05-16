@@ -1,11 +1,11 @@
 import random
 import pygame
-from entities.card import Card
+from card import Card
 from ui.file_loader import FileLoader
 
 
 class Board:
-    """Luokka, jonka vastuulla on peliruudun luominen ja korttien sijoittaminen ruudulle.
+    """Luokka, jonka vastuulla on peliruudukon luominen ja korttien sijoittaminen ruudulle.
 
     Attributes:
         ROWS: Kokonaisluku, joka kuvaa, kuinka monta riviä peliruudulla on
@@ -15,11 +15,11 @@ class Board:
                      ja alle on jätettävä
     """
     def __init__(self, ROWS, COLUMNS, CARD_LEN, CARD_SPACE):
-        """Luokan konstruktori, luo peliruudun
+        """Luokan konstruktori, luo peliruudukon
 
         Args:
-            ROWS (int): Kuvaa, kuinka monta riviä peliruudulla on
-            COLUMNS (int): Kuvaa, kuinka monta jonoa peliruudulla on
+            ROWS (int): Kuvaa, kuinka monta riviä peliruudukolla on
+            COLUMNS (int): Kuvaa, kuinka monta jonoa peliruudukolla on
             CARD_LEN (tuple): [0] = kortin leveys, [1] = kortin pituus
             CARD_SPACE (tuple): [0] = tyhjä tila horisontaalisesti, [1] = tyhjä tila vertikaalisesti
         """
@@ -43,7 +43,7 @@ class Board:
 
         # Luo ROWS * COLUMNS Ruudukon.
         # Siis tyhjiä kortin kokoisia Rect-olioita
-        # Nyt samalla antaa cards olioille locationin (rectin)
+        # samalla antaa cards olioille locationin (rectin)
         # Muuttuja k muistaa monesko kortti on käsittelyssä.
         self.card_grid = [[] for i in range(self.rows)]
         k = 0

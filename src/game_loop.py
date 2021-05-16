@@ -32,7 +32,7 @@ class GameLoop:
         self._event_queue = event_queue
         self._board = board
         self._turned = []
-        self._matched = 16 #
+        self._matched = 0
         self.turns = 0
         self.mistakes = 0
         self._seen = set()
@@ -48,14 +48,14 @@ class GameLoop:
             self._render()
 
             if self._matched == self._board.rows * self._board.columns:
-                pygame.time.wait(500)
+                pygame.time.wait(300)
                 self._renderer.render_go_screen(self.turns, self.mistakes,
                                                  self._clock.get_ticks()/1000)
                 save_score = open("scores.txt", "a")
                 now = datetime.now()
                 dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
-                save_score.write("Date: " + dt_string + ", Turns: " + str(self.turns) + ", Mistakes: " + 
-                                    str(self.mistakes) + "\n")
+                save_score.write("Date: " + dt_string + ", Turns: " + str(self.turns) + \
+                                ", Mistakes: " + str(self.mistakes) + "\n")
                 while True:
                     if self._handle_events() is False:
                         self._game_over = True
@@ -63,7 +63,6 @@ class GameLoop:
 
             if len(self._turned) >= 2:
                 if self._turned[0].get_id() == self._turned[1].get_id():
-                    print("Match!")
                     self._turned[0].set_match()
                     self._turned[1].set_match()
                     self._matched += 2
@@ -92,11 +91,11 @@ class GameLoop:
                 return False
             if event.type == pygame.MOUSEBUTTONDOWN:
                 mouse_pos = event.pos
-                print(self.turns)
                 for card in self._board.cards:
                     if card.get_location().collidepoint(mouse_pos):
-
-                        print('Clicked on ' + str(card.get_id()))
+                        #The prints/elifs are there for future purposes,
+                        #for example the cards could jiggle a bit if
+                        #already turned/matched
                         if card.get_matched() is True:
                             print("Already matched: do nothing")
                         elif card.get_turned_over() is True:
@@ -114,4 +113,3 @@ class GameLoop:
         """
         self._renderer.render_board(self.turns, self.mistakes, self._clock.get_ticks()/1000)
     
-    #def _reset_game(self):

@@ -4,7 +4,7 @@
 
 Ohjelman rakenne noudattaa kerrosarkkitehtuuria ja pakkausrakenne on seuraava:
 
-![Pakkauskaavio] (./kuvat/Pakkauskaavio.jpg)
+![Pakkauskaavio](./kuvat/Pakkauskaavio.jpg)
 
 Pakkaus ui sisältää käyttöliittymästä huolehtivan koodin, src sisältää pelin logiikan ja ylläpidon.
 
@@ -17,7 +17,7 @@ Pelissä on vain kaksi eri näkymää.
 
 ## Sovelluslogiikka
 
-![Luokkakaavio] (./kuvat/Luokkakaavio.jpg)
+![Luokkakaavio](./kuvat/Luokkakaavio.jpg)
 
 
 Pelin ylläpidosta huolehtii GameLoop-luokka ja se on riippuvainen kaikista muista luokista. Board-luokka vastaa peliruudukon luomisesta ja korttien tilan ylläpidosta. Card-luokka vastaa yksittäisen kortin luonnista ja ylläpidosta. Renderer-luokka vastaa eri elementtien piirtämisestä ruudulle. FileLoader-luokka huolehtii tieodstojen lataamisesta. EventQueue-luokka on vastuussa tapahtumienkäsittelystä, kuten pelaajan syötteiden käsittely. Clock-luokka huolehtii pelin ajoituksista.
